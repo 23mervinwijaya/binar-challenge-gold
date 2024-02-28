@@ -1,4 +1,3 @@
-<%- include('layouts/slider')%><br>
 <div class="card-container" >
 
 <% if (products===0) {%>
@@ -16,11 +15,10 @@
           </p>
           <p class="price">Rp. <%= product.harga %></p>
           <p class="price-desc">selama persediaan masih ada</p>
-          <a href="/product=<%=product.id%>"><button class="btn btn-outline-primary">Detail</button></a>
+          <a href="/product=<%=product.id%>" class="btn btn-outline-primary">Detail</a>
         </div>
       </div>
 <% }); %>
-<a href="/products" style="margin: auto;margin-top: 20px;"><button class="btn btn-primary" >Lihat Produk Lainnya</button></a>
 
 </div>
 
