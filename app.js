@@ -71,6 +71,13 @@ app.get('/product=:id',async(req,res)=>{
 })
 
 
+app.delete('/delete',async(req,res)=>{
+  const id = req.params.id;
+  console.log(id)
+  await db("products").where('id',id).del();
+  res.send(alert('berhasil'))
+})
+
 
 
 
