@@ -16,11 +16,13 @@
           </p>
           <p class="price">Rp. <%= product.harga %></p>
           <p class="price-desc">selama persediaan masih ada</p>
-          <a href="/product=<%=product.id%>"><button class="btn btn-outline-primary">Detail</button></a>
+          <a href="/product-register=<%=product.id%>"><button class="btn btn-outline-primary">Detail</button></a>
         </div>
       </div>
+      <% if(i==5){ %>
+        <a href="/products" style="margin: auto;margin-top: 20px;"><button class="btn btn-primary" >Lihat Produk Lainnya</button></a>
+        <% } %>
 <% }); %>
-<a href="/products" style="margin: auto;margin-top: 20px;"><button class="btn btn-primary" >Lihat Produk Lainnya</button></a>
 
 </div>
 
